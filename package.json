@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/kooriko/reactmusic/issues"
   },
-  "homepage": "https://github.com/kooriko/reactmusic#readme"
+  "homepage": "https://github.com/kooriko/reactmusic#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^7.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.4.5"
+  }
 }
