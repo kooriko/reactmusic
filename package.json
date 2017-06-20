@@ -1,0 +1,24 @@
+{
+  "name": "reactmusic",
+  "version": "0.0.1",
+  "description": "依靠react驱动的音乐SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kooriko/reactmusic.git"
+  },
+  "keywords": [
+    "react",
+    "music",
+    "SPA"
+  ],
+  "author": "mumu neko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kooriko/reactmusic/issues"
+  },
+  "homepage": "https://github.com/kooriko/reactmusic#readme"
+}
