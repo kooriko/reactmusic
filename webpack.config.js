@@ -59,7 +59,8 @@ module.exports = {
 					configFile: './.eslintrc.js'
 				},
 			}
-		})
+		}),
+		new webpack.HotModuleReplacementPlugin()
 	]
 
 }

@@ -1,25 +1,28 @@
 import React from 'react';
 
-export default class Header extends React.Component{
-	state = {
-		hasLogined: false,
+export default class Header extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			hasLogined: false
+		};
 	}
 
 	render(){
 		const loginModule = this.state.hasLogined ?
-		<div className="m-Logined">
+			<div className="m-Logined">
 
-		</div> :
-		<div className="m-login">
-		<a>登录</a>
-			<ul>
-				<li>手机号登录</li>
-				<li>微信登录</li>
-				<li>QQ登录</li>
-				<li>新浪登录</li>
-				<li>网易邮箱账号登录</li>
-			</ul>
-		</div>
+			</div> :
+			<div className="m-login">
+				<a>登录</a>
+				<ul>
+					<li>手机号登录</li>
+					<li>微信登录</li>
+					<li>QQ登录</li>
+					<li>新浪登录</li>
+					<li>网易邮箱账号登录</li>
+				</ul>
+			</div>;
 
 		return (
 			<header className="g-header">
@@ -45,6 +48,6 @@ export default class Header extends React.Component{
 				<div className="m-redBar">
 				</div>
 			</header>
-		)
+		);
 	}
 }
