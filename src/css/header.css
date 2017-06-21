@@ -1,0 +1,104 @@
+.g-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: linear-gradient(to bottom, #353535 50%, #1C1C1C);
+	font: 12px '微软雅黑';
+	color: #CCC;
+}
+.g-headLeft{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.g-headLeft .u-home{
+	width: 157px;
+	height: 29px;
+	margin-right: 18px;
+	background: #EEE;
+}
+.g-headLeft .m-navigator{
+	display: flex;
+}
+.g-headLeft .m-navigator li{
+	position: relative;
+	padding: 30px 20px;
+}
+.g-headLeft .m-navigator li:hover{
+	background: linear-gradient(to bottom, #3D3D3D 50%, #1B1A1A);
+	box-shadow: 1px 0 #414141;
+}
+.g-headRight{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.g-headRight .u-search{
+	width: 180px;
+	height: 11px;
+	margin-right: 15px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px #ABABAB inset;
+	border-radius: 11px;
+	background: #EAEAEA;
+}
+.g-headRight .u-search i{
+	width: 13px;
+	height: 13px;
+	background: #EEE;
+}
+.g-headRight .u-search input{
+	width: inherit;
+	border: none;
+	background: none;
+}
+.g-headRight .m-login{
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+}
+.g-headRight .m-login:hover ul{
+	display: flex;
+	z-index: 2;
+}
+.g-headRight .m-login:hover a{
+	text-decoration: underline;
+}
+.g-headRight .m-login ul{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	flex-direction: column;
+	border: 1px solid #000;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #404040 inset;
+	background: #2A2A2A;
+}
+.g-headRight .m-login ul:hover{
+	display: flex;
+}
+.g-headRight .m-login ul li{
+	width: 100px;
+	padding: 10px 30px;
+	line-height: 40px;
+}
+.m-redBar::before{
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: 339px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #C70C0C;
+}
+.m-redBar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	border-top: 1px solid #EA1717;
+	border-bottom: 1px solid #5F5F6F;
+	box-shadow: 0 1px 2px 0 #B8B8B8;
+	background: #C70C0C;
+}
