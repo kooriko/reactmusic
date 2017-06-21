@@ -16,26 +16,50 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel-loader',
 				query: {
-					presets: ['react','es2015','stage-0']
+					presets: ['react', 'es2015', 'stage-0']
 				}
+			},
+			// {
+			// 	test: /\.jsx?$/,
+			// 	exclude: /node_modules/,
+			// 	loader: 'react-hot!babel'
+			// },
+			{
+				enforce:'pre',
+				test: /\.js$/,
+				exclude: /node_modules/,
+				// loaders: ['babel-loader', 'eslint-loader']
+				loader: 'eslint-loader'
 			},
 			{
 				test: /\.css$/,
 				loaders: ['style', 'css']
 			},
 			{
-				test:/\.less$/, loader: 'style-loader!css-loader!less-loader'
+				test: /\.less$/, loader: 'style-loader!css-loader!less-loader'
 			},
 			{
-				test:/\.(png|jpe?g|gif|svg)$/,
+				test: /\.(png|jpe?g|gif|svg)$/,
 				loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
 			}
 		]
 	},
 	devServer: {
-        contentBase: "./src",
-        port: "2333",
-        inline: true,
-        historyApiFallback: true,
-    }
+		contentBase: "./src",
+		port: "2333",
+		inline: true,
+		hot: true,
+		historyApiFallback: true,
+	},
+	//eslint配置
+	plugins: [
+		new webpack.LoaderOptionsPlugin({
+			options: {
+				eslint: {
+					configFile: './.eslintrc.js'
+				},
+			}
+		})
+	]
+
 }
