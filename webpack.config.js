@@ -19,18 +19,19 @@ module.exports = {
 					presets: ['react', 'es2015', 'stage-0']
 				}
 			},
+			// NOTE: 无法安装 esLint 暂时关闭这里。
 			// {
 			// 	test: /\.jsx?$/,
 			// 	exclude: /node_modules/,
 			// 	loader: 'react-hot!babel'
 			// },
-			{
-				enforce:'pre',
-				test: /\.js$/,
-				exclude: /node_modules/,
-				// loaders: ['babel-loader', 'eslint-loader']
-				loader: 'eslint-loader'
-			},
+			// {
+			// 	enforce:'pre',
+			// 	test: /\.js$/,
+			// 	exclude: /node_modules/,
+			// 	// loaders: ['babel-loader', 'eslint-loader']
+			// 	loader: 'eslint-loader'
+			// },
 			{
 				test: /\.css$/,
 				loaders: ['style', 'css']

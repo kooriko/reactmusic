@@ -8,6 +8,13 @@ export default class Header extends React.Component {
 		};
 	}
 
+	// NOTE: 孙组件并不能一下传给父组件值，于是准备使用 redux 来实现。该段代码删除。
+	// stateChangeHandle = () => {
+	// 	(activeNav)=>{
+	// 		this.setState({activeNav: activeNav});
+	// 	}
+	// }
+
 	render(){
 		const loginModule = this.state.hasLogined ?
 			<div className="m-Logined">
@@ -42,7 +49,6 @@ export default class Header extends React.Component {
 					<div className="u-search">
 						<i/><input placeholder="单曲/歌手/专辑/歌单/MV/用户"/>
 					</div>
-					{loginModule}
 				</div>
 
 				<div className="m-redBar">
