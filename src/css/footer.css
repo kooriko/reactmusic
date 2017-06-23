@@ -1,0 +1,12 @@
+.g-footer{
+	display: flex;
+	margin: 0 auto;
+	max-width: 75%;
+	justify-content: space-between;
+}
+.g-footLeft{
+	max-width: 66%;
+}
+.g-footRight{
+	max-width: 25%;
+}
