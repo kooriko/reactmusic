@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default class RedNavigator extends React.Component{
 	constructor(props){
@@ -36,11 +37,20 @@ export default class RedNavigator extends React.Component{
 	// }
 
 	render(){
-		const arr = ['推荐','排行榜','歌单','主播电台','歌手','新碟上架'];
+		const routers = [
+			{name: '推荐', slug: ''},
+			{name: '排行榜', slug: 'toplist'},
+			{name: '歌单', slug: 'playlist'},
+			{name: '主播电台', slug: 'djradio'},
+			{name: '歌手', slug: 'artist'},
+			{name: '新碟上架', slug: 'album'}
+		];
 
 		const navigators = <nav className="m-nav" ref="nav" onClick={this.clickHandle}>
-			{arr.map((val, index) => (
-				<li key={index}><a key={index}>{val}</a></li>
+			{routers.map(({name, slug}) => (
+				<li key={name}>
+					<Link to={slug}>{name}</Link>
+				</li>
 			))}
 		</nav>;
 

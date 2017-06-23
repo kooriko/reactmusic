@@ -17,12 +17,12 @@ export default class Body extends React.Component{
 				<RedNavigator stateChangeHandle={this.stateChangeHandle}/>
 				<div className="z-F5background">
 					<div className="g-body width-75">
-						<Route path="/" Component={Home}/>
-						<Route path="/toplist" Component={TopList}/>
-						<Route path="/playlist" Component={PlayList}/>
-						<Route path="/djradio" Component={DjRadio}/>
-						<Route path="/artist" Component={Artist}/>
-						<Route path="/album" Component={Album}/>
+						<Route path="/" exact component={Home}/>
+						<Route path="/toplist" component={TopList}/>
+						<Route path="/playlist" component={PlayList}/>
+						<Route path="/djradio" component={DjRadio}/>
+						<Route path="/artist" component={Artist}/>
+						<Route path="/album" component={Album}/>
 					</div>
 				</div>
 			</div>
