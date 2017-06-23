@@ -13,15 +13,17 @@ import Album from '../routers/album';
 export default class Body extends React.Component{
 	render(){
 		return (
-			<div className="z-F5background">
+			<div>
 				<RedNavigator stateChangeHandle={this.stateChangeHandle}/>
-				<div className="g-body width-75">
-					<Route path="/" Component={Home}/>
-					<Route path="/toplist" Component={TopList}/>
-					<Route path="/playlist" Component={PlayList}/>
-					<Route path="/djradio" Component={DjRadio}/>
-					<Route path="/artist" Component={Artist}/>
-					<Route path="/album" Component={Album}/>
+				<div className="z-F5background">
+					<div className="g-body width-75">
+						<Route path="/" Component={Home}/>
+						<Route path="/toplist" Component={TopList}/>
+						<Route path="/playlist" Component={PlayList}/>
+						<Route path="/djradio" Component={DjRadio}/>
+						<Route path="/artist" Component={Artist}/>
+						<Route path="/album" Component={Album}/>
+					</div>
 				</div>
 			</div>
 		)

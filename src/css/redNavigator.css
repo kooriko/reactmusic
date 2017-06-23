@@ -20,6 +20,7 @@
 	background: linear-gradient(to bottom, #720100, #8B0504);
 }
 .g-nav .m-nav li a{
+	font-size: 12px;
 	line-height: 12px;
 	color: #FFF;
 }
